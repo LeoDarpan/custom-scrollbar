@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+body{
+    background-color: #dc1430;
+    padding: 15px 20px;
+}
+header{
+    margin-bottom: 20px;
+    h1{
+        font-weight: 700;
+        font-size: 5em;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 2em;
+    }
+}
+main{
+    column-count: 2;
+    column-gap: 20px;
+    text-align: justify;
+    @media (max-width: 767px){
+        column-count: 1;
+    }
+    .main__content{
+        font-size: 1.5em;
+        h3::first-letter{
+            font-size: 3em;
+            float: left;
+            line-height: .5em;
+            margin: 5px 2px 5px 0px;
+        }
+        ul{
+            padding: 15px 25px;
+            li{
+                ol{
+                    margin-left: 40px;
+                }            
+            }
+        }
+        .main__content__imp{
+            background: rgba($color: #000000, $alpha: 0.90);
+            color: white;
+        }
+        .main__content__piece{
+            margin-block: 10px;
+            width: 100%;
+            h1{
+                color: #000;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            p:first-letter{
+                font-size: 3em;
+                float: left;
+                font-weight: 700;
+                line-height: 1em;
+                margin: 5px 10px 10px 0px;
+                color: #222;
+            }
+        }
+    }
+}
+::-webkit-scrollbar{
+    width: 1.5em;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+    height: 30px;
+    width: 100%;
+    border-radius: 100vw;
+    background-color: white;
+    border: .25em solid black;
+}

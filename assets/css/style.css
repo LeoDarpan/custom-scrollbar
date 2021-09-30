@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+  background-color: #dc1430;
+  padding: 15px 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 2em;
+}
+
+main {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  main {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
+main .main__content {
+  font-size: 1.5em;
+}
+
+main .main__content h3::first-letter {
+  font-size: 3em;
+  float: left;
+  line-height: .5em;
+  margin: 5px 2px 5px 0px;
+}
+
+main .main__content ul {
+  padding: 15px 25px;
+}
+
+main .main__content ul li ol {
+  margin-left: 40px;
+}
+
+main .main__content .main__content__imp {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+main .main__content .main__content__piece {
+  margin-block: 10px;
+  width: 100%;
+}
+
+main .main__content .main__content__piece h1 {
+  color: #000;
+}
+
+main .main__content .main__content__piece img {
+  width: 100%;
+  height: auto;
+}
+
+main .main__content .main__content__piece p:first-letter {
+  font-size: 3em;
+  float: left;
+  font-weight: 700;
+  line-height: 1em;
+  margin: 5px 10px 10px 0px;
+  color: #222;
+}
+
+::-webkit-scrollbar {
+  width: 1.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 30px;
+  width: 100%;
+  border-radius: 100vw;
+  background-color: white;
+  border: .25em solid black;
+}
+/*# sourceMappingURL=style.css.map */
